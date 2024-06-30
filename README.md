@@ -49,17 +49,17 @@ Ensure PostgreSQL is running and create a database named todo.
   npm run start:dev
 
 
-API Endpoints
-
+# API Endpoints
+  ```
   POST /auth/register: Register a new user.
-POST /auth/login: Login with credentials to obtain a JWT token.
-POST /todos: Create a new todo task.
-GET /todos: Retrieve all todo tasks.
-GET /todos/
-: Retrieve a specific todo task by ID.
-PUT /todos/
-: Update a specific todo task by ID.
-DELETE /todos/
-: Delete a specific todo task by ID.
-POST /todos/
-/toggle: Toggle the completion status of a todo task.
+  POST /auth/login: Login with credentials to obtain a JWT token.
+  POST /todos: Create a new todo task.
+  GET /todos: Retrieve all todo tasks.
+  GET /todos/
+  : Retrieve a specific todo task by ID.
+  PUT /todos/
+  : Update a specific todo task by ID.
+  DELETE /todos/
+  : Delete a specific todo task by ID.
+  POST /todos/
+  /toggle: Toggle the completion status of a todo task.
