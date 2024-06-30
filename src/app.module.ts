@@ -15,11 +15,12 @@ import { UserModule } from './user/user.module';
       imports: [ConfigModule],
       useFactory:(configService: ConfigService) => ({
         type: 'postgres',
-        host: 'localhost',
-        port: 5433,
-        username: 'postgres',
-        password: 'pR0103@',
-        database: 'todo',
+        host: configService.get<string>('DATABASE_HOST'),
+        port: configService.get<number>('DATABASE_PORT'),
+        username: configService.get<string>('DATABASE_USERNAME'),
+        password: configService.get<string>('DATABASE_PASSWORD'),
+        database: configService.get<string>('DATABASE_NAME'),
+
         entities: [User, Todo],
         synchronize: true,
 
