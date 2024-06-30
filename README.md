@@ -20,17 +20,17 @@ PostgreSQL
 
 
 3. Set up environment variables
-Create a .env file in the root directory based on the .env.example file provided. Replace values with your actual database configuration:
+  Create a .env file in the root directory based on the .env.example file provided. Replace values with your actual database configuration:
+  ```
+    FRONTEND_URL=http://localhost:3000
 
-FRONTEND_URL=http://localhost:3000
+    JWT_SECRET=secret
 
-JWT_SECRET=secret
-
-DATABASE_HOST=localhost
-DATABASE_PORT=5433
-DATABASE_USERNAME=postgres
-DATABASE_PASSWORD=passowrd
-DATABASE_NAME=todo
+    DATABASE_HOST=localhost
+    DATABASE_PORT=5433
+    DATABASE_USERNAME=postgres
+    DATABASE_PASSWORD=passowrd
+    DATABASE_NAME=todo
 
 
 4. Database setup
