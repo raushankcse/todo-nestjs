@@ -31,10 +31,11 @@ PostgreSQL
     DATABASE_USERNAME=postgres
     DATABASE_PASSWORD=passowrd
     DATABASE_NAME=todo
+  ```
 
 
 4. Database setup
-  Ensure PostgreSQL is running and create a database named todo.
+  Ensure PostgreSQL is running and create a database named 'todo'.
 
 
 
@@ -42,12 +43,13 @@ PostgreSQL
   If using TypeORM migrations:
   ```
     npm run typeorm migration:run
+   ``` 
 
 
 6. Start the application
   ```
    npm run start:dev
-
+   ```
 
 
 # API Endpoints
